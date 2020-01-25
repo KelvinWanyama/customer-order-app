@@ -8,8 +8,7 @@ import { ICustomer } from '../shared/interfaces';
 })
 export class CustomersListComponent implements OnInit {
   private _customers: ICustomer[] = [];
-  @Input()
-  public get customers() : ICustomer[] {
+  @Input() get customers() : ICustomer[] {
     return this._customers;
   }
 
