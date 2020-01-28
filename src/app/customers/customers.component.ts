@@ -9,7 +9,7 @@ import { DataService } from '../core/data.service';
 })
 export class CustomersComponent implements OnInit {
   title: string;
-  people: ICustomer[];
+  people: any[];
 
   constructor( private dataservice: DataService) { }
 

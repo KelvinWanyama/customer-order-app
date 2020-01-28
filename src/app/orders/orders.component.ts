@@ -17,8 +17,8 @@ export class OrdersComponent implements OnInit {
 
   ngOnInit() {
     let id = +this.route.snapshot.paramMap.get('id');
-    this.dataService.getOrders(id).subscribe((order: IOrder[]) => {
-      this.orders = this.orders;
+    this.dataService.getOrders(id).subscribe((orders: IOrder[]) => {
+      this.orders = orders;
     });
 
     this.dataService.getCustomer(id).subscribe((customer: ICustomer) => {
